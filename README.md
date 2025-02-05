@@ -42,3 +42,11 @@ Make sure you have the following installed before running the project:
 ```bash
 git clone https://github.com/sricharnitha13/interactive_dashboard.git
 cd interactive_dashboard
+
+python -m venv env
+source env/bin/activate   # For Mac/Linux
+env\Scripts\activate      # For Windows
+
+pip install -r requirements.txt
+python manage.py migrate
+
